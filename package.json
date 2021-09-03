@@ -1,6 +1,6 @@
 {
-  "name": "action-nodejs-package-info",
-  "version": "0.0.0",
+  "name": "hawk.releases",
+  "version": "1.0.0",
   "scripts": {
     "build": "ncc build index.js --minify",
     "example": "yarn example:build && yarn example:start",

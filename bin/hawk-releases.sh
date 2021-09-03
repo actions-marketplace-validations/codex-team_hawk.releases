@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Script help
 if [[ "$1" =~ ^-h|--help$ ]] ; then
@@ -57,7 +57,7 @@ if [ $isGitAvailable -eq 0 ]; then
             rest=''
         fi
 
-        let "commitsCounter+=1" 
+        let "commitsCounter+=1"
         lastCommits="$lastCommits$first,"
         commits=$rest
     done

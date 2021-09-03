@@ -16,6 +16,14 @@ try {
     const token = core.getInput('token');
     const collectorEndpoint = core.getInput('collectorEndpoint');
 
+    if (!release) {
+        throw new Error('`release` param is missing');
+    }
+
+    if (!token) {
+        throw new Error('`token` param is missing');
+    }
+
     // @todo sanitize fields to avoid command injection
 
     const result = shell.exec(`${pathToScript} -r="${release}" -t="${token}" -ce="${collectorEndpoint}"`);
