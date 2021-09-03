@@ -1,0 +1,17 @@
+{
+  "name": "action-nodejs-package-info",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "ncc build index.js --minify",
+    "example": "yarn example:build && yarn example:start",
+    "example:build": "yarn build",
+    "example:start": "node example/index.js"
+  },
+  "devDependencies": {
+    "@actions/core": "^1.2.6",
+    "@vercel/ncc": "^0.25.1"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.4"
+  }
+}

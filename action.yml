@@ -1,0 +1,27 @@
+name: 'Hawk release sender'
+description: 'Action for sending release data commits info to Hawk'
+branding:
+  icon: 'truck'
+  color: 'yellow'
+
+inputs:
+  release:
+    description: 'Release identifier'
+    required: true
+
+  token:
+    description: 'Hawk project token'
+    required: true
+
+  collectorEndpoint:
+    description: 'Custom collector endpoint'
+    required: false
+    default: 'https://k1.hawk.so/release'
+
+outputs:
+  name:
+    description: 'Package name'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

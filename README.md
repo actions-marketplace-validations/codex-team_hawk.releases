@@ -4,9 +4,9 @@ This repository can help you collect data to send Hawk releases.
 
 ### Script for sending commits
 
-To make it easier to send commits, you can use a [shell script](./scripts/commits.sh) that will take the last few commits and send them to the collector.
+To make it easier to send commits, you can use a [shell script](bin/commits.sh) that will take the last few commits and send them to the collector.
 
-#### [commits.sh](./scripts/commits.sh) arguments
+#### [commits.sh](bin/commits.sh) arguments
 | Argument name | Required | Description |
 | -- | -- | -- |
 | `-t` \| `--token` | Yes | Hawk integration token for your project. |
