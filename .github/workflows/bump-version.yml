@@ -44,7 +44,7 @@ jobs:
           node-version: 15
           registry-url: https://registry.npmjs.org/
 
-      # Bump version to the next prerelease (patch) with rc suffix
+      # Bump version to the next patch
       - name: Suggest the new version
         run: yarn version --patch --no-git-tag-version
 
